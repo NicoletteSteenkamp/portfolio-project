@@ -88,6 +88,9 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  font-size: 48px;
+}
 .content h3 {
   font-size: 24px;
   font-family: var(--secondary-font-family);
@@ -126,6 +129,41 @@ a {
   text-decoration: none;
   color: var(--maincolor);
 }
+
+footer {
+  margin: 60px 0;
+}
+footer .contact-box {
+  background: var(--altbackgroungcolor);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  color: var(--maincolor);
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--popofcolor);
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a {
+  font-size: 35px;
+  color: var(--maincolor);
+  margin: 0px 20px;
+  background: var(--altbackgroungcolor);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+footer .social-links a:hover {
+  color: var(--popofcolor);
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
