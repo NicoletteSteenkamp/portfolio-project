@@ -22,6 +22,34 @@ h6 {
   font-weight: bold;
 }
 
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  margin-left: 10px;
+  display: inline;
+  line-height: 42px;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--popofcolor);
+  transition: all 100ms ease-in-out;
+}
+nav li .active a {
+  color: var(--stdcolor);
+}
+.logo {
+  color: var(--popofcolor);
+  padding: 10px 0;
+  max-width: 40px;
+}
+
 .hero {
   background: var(--altbackgroungcolor);
   text-align: center;
@@ -94,6 +122,10 @@ p {
 .project-description {
   padding: 120px 60px;
 }
+a {
+  text-decoration: none;
+  color: var(--maincolor);
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -112,7 +144,7 @@ p {
     font-size: 44px;
   }
   h2 {
-    font-size: 44px;
+    font-size: 35px;
   }
 
   .content {
@@ -121,6 +153,39 @@ p {
   }
   .content h1 {
     font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .logo {
+    display: none;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .hero {
+    padding: 40px 20px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero h2 {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+  .content h1 {
+    font-size: 25px;
     line-height: 40px;
   }
 }
