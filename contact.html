@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="Portfolio"
-      content="Portfolio project for Nicolette Steenkamp |Software engineer|frontend dev"
+      content="Portfolio project for Nicolette Steenkamp | Software Engineer | Frontend Developer"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -25,52 +25,55 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Contact me- Contact Nicolette Steenkamp | Front-end dev</title>
+    <title>Contact me - Nicolette Steenkamp | Front-end Developer</title>
   </head>
   <body>
     <div class="container">
-      <nav class="d-flex justify-content-between">
+      <nav class="d-flex justify-content-between align-items-center">
         <div class="logo d-flex d-none d-md-flex" title="homepage">
-          <a href="index.html">N.Steenkamp</a>
+          <a href="index.html">N. Steenkamp</a>
         </div>
-        <ul>
-          <li>
-            <a href="index.html" title="homepage">Home</a>
-          </li>
+        <ul class="d-flex list-unstyled">
+          <li><a href="index.html" title="homepage">Home</a></li>
           <li><a href="about.html" title="about me">About</a></li>
+          <li><a href="qualifications.html" title="qualifications">Qualifications</a></li>
           <li><a href="projects.html" title="projects">Projects</a></li>
-          <li class="active"><a href="/" title="contact me">Contact</a></li>
+          <li class="active"><a href="contact.html" title="contact me">Contact</a></li>
         </ul>
       </nav>
     </div>
+
     <div class="content-container container">
       <div class="content text-center">
-        <h1 class="mb-5 text-center">Let's get in touch!</h1>
-        <h3>E-mail</h3>
+        <h1 class="mb-5">Let's get in touch!</h1>
+
+        <h3>Contact Form</h3>
+        <form action="mailto:steenkampnicolette815@gmail.com" method="POST" enctype="text/plain" class="text-start mx-auto" style="max-width: 500px;">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-branding">Send Message</button>
+        </form>
+
+        <h3 class="mt-5">Resume</h3>
         <p>
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:steenkampnicolette815@gmail.com">You've got mail</a>
-        </p>
-        <h3>Github</h3>
-        <p>
-          <i class="fa-brands fa-square-github"></i>
-          <a href="https://github.com/NicoletteSteenkamp" target="_blank"
-            >Let's get coding</a
-          >
-        </p>
-        <h3>Linked in</h3>
-        <p>
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="https://www.linkedin/in/nicolette-steenkamp" target="_blank"
-            >Let's connect</a
-          >
+          <i class="fa-solid fa-file-pdf"></i>
+          <a href="./assets/NICOLETTE STEENKAMP.pdf" download="Nicolette-Steenkamp-Resume.pdf">Download My Resume</a>
         </p>
       </div>
     </div>
+
     <footer class="container">
-      <div
-        class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
-      >
+      <div class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex">
         <div>
           <h3>Work Inquiry</h3>
           <p class="text-muted">Let's work together</p>
@@ -79,48 +82,57 @@
           <a
             href="contact.html"
             class="btn btn-branding mt-3"
-            title="get ahold of Nicolette"
+            title="get in touch with Nicolette"
             >Contact me</a
           >
         </div>
       </div>
+
       <div class="d-flex justify-content-center">
         <span class="email-link"><i class="fa-solid fa-envelope"></i></span>
         <a
-          href="mailto:steenkampnicolette815@gmail"
+          href="mailto:steenkampnicolette815@gmail.com"
           class="email-link"
-          title="mail link "
+          title="mail link"
         >
           You've got mail</a
         >
       </div>
-      <div class="social-links d-flex justify-content-center">
+
+      <div class="social-links d-flex justify-content-center mt-3">
         <a
-          href="https://www.linkedin/in/nicolette-steenkamp"
+          href="https://www.linkedin.com/in/nicolettesteenkamp"
           target="_blank"
-          title="my linked in"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="My LinkedIn"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
         <a
           href="https://github.com/NicoletteSteenkamp"
           target="_blank"
-          title="my github profile"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          title="My GitHub profile"
           ><i class="fa-brands fa-square-github"></i
         ></a>
         <a
-          href="htpps://www.instagram.com/codedbyN.Steenkamp"
+          href="https://www.instagram.com/codedbyN.Steenkamp"
           target="_blank"
-          title="insta"
-        >
-          <i class="fa-brands fa-square-instagram"></i
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          title="My Instagram"
+          ><i class="fa-brands fa-square-instagram"></i
         ></a>
       </div>
     </footer>
+
     <p class="text-center mt-5">
       This project was coded by Nicolette Steenkamp and is
       <a href="https://github.com/NicoletteSteenkamp/portfolio-project"
-        >open-sourced code.</a
-      >
+        >open-source code</a
+      >.
     </p>
   </body>
 </html>
+
