@@ -10,147 +10,148 @@
 
 body {
   font-family: var(--secondary-font-family);
+  margin: 0;
+  padding: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font-family);
   color: var(--stdcolor);
   font-weight: bold;
 }
 
 nav {
-  padding: 20px 0;
+  padding: 1rem 0;
 }
+
 nav ul {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 nav li {
   list-style: none;
-  margin-left: 10px;
-  display: inline;
+  margin-left: 1rem;
   line-height: 42px;
 }
 
-nav a:hover,
-nav li.active a {
+nav a {
+  text-decoration: none;
+  color: var(--maincolor);
+}
+
+nav a:hover, nav li.active a {
   color: var(--popofcolor);
-  transition: all 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
 }
-nav li .active a {
-  color: var(--stdcolor);
-}
+
 .logo {
   color: var(--popofcolor);
-  padding: 10px 0;
-  max-width: 40px;
+  padding: 0.5rem 0;
 }
 
 .hero {
   background: var(--altbackgroungcolor);
   text-align: center;
-  padding: 80px 20px;
+  padding: 5rem 2rem;
 }
-.content-container {
-  padding: 60px 20px;
-}
+
 .hero h1 {
   color: var(--popofcolor);
   font-weight: bold;
-  font-size: 96px;
-  font-family: var(--heading-font-family);
+  font-size: 6vw;
 }
+
+.content-container {
+  padding: 4rem 2rem;
+}
+
 .content-container h1 {
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 4vw;
   color: var(--maincolor);
 }
 
 .hero h2 {
   font-weight: normal;
-  font-size: 24px;
-  line-height: 2px;
+  font-size: 2vw;
 }
+
 .content-container h2 {
-  font-size: 18px;
-  font-family: var(--secondary-font-family);
+  font-size: 1.5vw;
   color: var(--popofcolor);
 }
+
 .content {
-  margin: 30px;
+  margin: 1rem;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 3.5vw;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 2.5vw;
 }
+
 .content h3 {
-  font-size: 24px;
-  font-family: var(--secondary-font-family);
-  line-height: 1.5;
+  font-size: 1.5vw;
   color: var(--popofcolor);
 }
+
 .hero p {
   font-weight: bold;
-  font-size: 36px;
-  margin: 0;
+  font-size: 2vw;
   color: var(--maincolor);
 }
+
 p {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .content p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-#resume{color: var(--popofcolor);}
+#resume {
+  color: var(--popofcolor);
+}
 
-.skills{text-align: center;}
+.skills, .qualifications {
+  text-align: center;
+}
 
-.skills-container img {
+.skills-container img, .qualifications img {
   height: 220px;
-  width: 200px;
-  margin: 20px;
+  width: auto;
+  margin: 1rem;
   border-radius: 14px;
   cursor: pointer;
 }
 
-.skills-container img:hover {
+.skills-container img:hover, .qualifications img:hover {
   border: 6px solid var(--popofcolor);
 }
-
-.qualifications{ 
-  cursor: pointer;}
-
-  .qualifications img:hover{border: 6px solid var(--popofcolor);}
 
 .btn-branding {
   border-radius: 4px;
   color: var(--tertiarycolor);
   background: var(--popofcolor);
-  line-height: 27px;
-  font-size: 18px;
-  padding: 15px 30px;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 1rem 2rem;
 }
 
 .project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 0 15px 0 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  padding: 0 1rem;
   border: 6px solid transparent;
 }
 
 .project-card img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -160,46 +161,48 @@ p {
   border: 6px solid var(--popofcolor);
 }
 
-
-
-
 a {
   text-decoration: none;
   color: var(--maincolor);
 }
 
 footer {
-  margin: 60px 0;
+  margin: 4rem 0;
 }
+
 footer .contact-box {
   background: var(--altbackgroungcolor);
-  padding: 30px 120px;
+  padding: 1.5rem;
   border-radius: 10px;
+  text-align: center;
 }
 
 footer .contact-box p {
   margin: 0;
 }
+
 footer .email-link {
   color: var(--maincolor);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 footer .email-link:hover {
   color: var(--popofcolor);
-  transition: all 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
 }
+
 footer .social-links a {
-  font-size: 35px;
+  font-size: 2rem;
   color: var(--maincolor);
-  margin: 0px 20px;
+  margin: 0 1rem;
   background: var(--altbackgroungcolor);
-  padding: 10px 14px;
+  padding: 0.5rem;
   border-radius: 50%;
 }
+
 footer .social-links a:hover {
   color: var(--popofcolor);
-  transition: all 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -209,57 +212,46 @@ footer .social-links a:hover {
   }
 
   .hero h1 {
-    font-size: 44px;
+    font-size: 6vw;
   }
+  
   .hero h2 {
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 44px;
-  }
-  h2 {
-    font-size: 35px;
+    font-size: 2vw;
   }
 
   .content {
     text-align: center;
     padding: 0;
   }
+
   .content h1 {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 5vw;
   }
 }
+
 @media (max-width: 375px) {
   .logo {
     display: none;
   }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
+  
   .hero {
-    padding: 40px 20px;
+    padding: 3rem 2rem;
   }
+  
   .hero h1 {
-    font-size: 34px;
+    font-size: 4vw;
   }
+  
   .hero h2 {
-    font-size: 13px;
+    font-size: 1.5vw;
   }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-
+  
   .content {
     text-align: center;
     padding: 0;
   }
+  
   .content h1 {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 3vw;
   }
 }
