@@ -129,6 +129,10 @@ p {
   border: 6px solid var(--popofcolor);
 }
 
+.qualifications{ 
+  cursor: pointer;}
+
+  .qualifications img:hover{border: 6px solid var(--popofcolor)}
 
 .btn-branding {
   border-radius: 4px;
