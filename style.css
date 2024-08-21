@@ -123,17 +123,37 @@ p {
   text-align: center;
 }
 
-.skills-container img, .qualifications img {
+
+.skills-container img {
   height: 220px;
   width: auto;
   margin: 1rem;
   border-radius: 14px;
   cursor: pointer;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
-.skills-container img:hover, .qualifications img:hover {
+.skills-container img:hover {
   border: 6px solid var(--popofcolor);
+  transform: rotateY(360deg);
 }
+
+.qualifications img {
+  height: 220px;
+  width: auto;
+  margin: 1rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.qualifications img:hover {
+  border: 6px solid var(--popofcolor);
+  transform: scale(1.7);
+}
+
 
 .btn-branding {
   border-radius: 4px;
